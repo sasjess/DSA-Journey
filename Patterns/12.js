@@ -1,22 +1,15 @@
-let i ;
-let j;
-let n = 5;
-for (i=0;i<n ; i++ ){
-    let row ="";
-    for(j = 0; j< n; j++){
-        if(j<= i){
-            row += " * ";
-        }else{
-            row += "   ";
-        }
-        for(i =0 ; i )
-    }
-console.log(row)
-}
+let n = 5; 
 
-for (i =n ; i > 0 ; i++){
-    let row = "";
+for (let i = 1; i <= (2 * n - 1); i++) { 
+    let row = ""; 
     
+    // Determine how many stars to print for the current row
+    let stars = i <= n ? i : (2 * n - i); 
     
+    // Build the row string
+    for (let j = 1; j <= stars; j++) { 
+        row += "*"; 
+    } 
     
+    console.log(row); 
 }
